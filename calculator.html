@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./javascript/calculator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <input type="text" name="input" id="input">
+        </div>
+        <div>
+            <div>
+                <button onclick="buttonClicked(this)">7</button>
+                <button onclick="buttonClicked(this)">8</button>
+                <button  onclick="buttonClicked(this)">9</button>
+                <button  onclick="buttonClicked(this)">+</button>
+            </div>
+            <div>
+                <button  onclick="buttonClicked(this)">4</button>
+                <button  onclick="buttonClicked(this)">5</button>
+                <button  onclick="buttonClicked(this)">6</button>
+                <button  onclick="buttonClicked(this)">-</button>
+            </div>
+            <div>
+                <button  onclick="buttonClicked(this)">1</button>
+                <button  onclick="buttonClicked(this)">2</button>
+                <button  onclick="buttonClicked(this)">3</button>
+                <button  onclick="buttonClicked(this)">*</button>
+            </div>
+             <div>
+                <button  onclick="buttonClicked(this)">0</button>
+                <button  onclick="buttonClicked(this)">/</button>
+                <button  onclick="applyOperation()">=</button>
+                <button  onclick="clear()">C</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

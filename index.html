@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./javascript/main.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div>
+            <h1>Add Student</h1>
+            <form  method="get" onsubmit="return saveStudent(event)" name="studentForm" >
+                <div>
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" required minlength="3" maxlength="12" 
+                    pattern="[A-Za-z]{3,12}" value="Karun" />
+                </div>
+                <div>
+                    <label for="last_name">Last Name</label>
+                    <input type="" name="last_name" id="last_name" required value="Seepana" />
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="" name="age" id="age" required min="18" max="90" value="25" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required value="karun@seepana.com" />
+                </div>
+                <button type="submit">Save Student</button>
+            </form>
+        </div>
+        <div>
+            User Submitted:
+            <div>
+                First Name: <p id="firstNameOutput" class="output" name="firstName"></p>
+            </div>
+            <div>
+                Last Name: <p id="lastNameOutput" class="output"></p>
+            </div>
+            <div>
+                Age: <p id="ageOutput" class="output"></p>
+            </div>
+            <div>
+                Email: <p id="emailOutput" class="output"></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
